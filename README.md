@@ -2,7 +2,6 @@
 
 ### 导航🧐
 - [主页](https://zhy2658.github.io/home.html)
-- [关于我们](https://zhy2658.github.io/about.html)
 - [github仓库](https://github.com/zhy2658/zhy2658.github.io)
 
 ### 我是谁？

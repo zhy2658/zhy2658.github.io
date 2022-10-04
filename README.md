@@ -3,6 +3,7 @@
 ### 导航🧐
 - [主页](https://zhy2658.github.io/home.html)
 - [关于我们](https://zhy2658.github.io/about.html)
+- [github仓库](https://github.com/zhy2658/zhy2658.github.io)
 
 ### 我是谁？
 我是黑人抬棺主持人兼CEO ，对没错！就是你们天天在网上发的那些东西
@@ -30,7 +31,7 @@
 ##### 其他均为假冒
 
 
-[专业团队官方网站](https://github.com/zhy2658/zhy2658.github.io)
+
 <br>
 [专业团队专业抬棺-黑人抬棺](https://zhy2658.github.io)
 

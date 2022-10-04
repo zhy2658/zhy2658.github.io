@@ -1,7 +1,7 @@
 ##  专业团队专业抬棺- 黑人抬棺😎
 
 ### 导航🧐
-- [主页](https://zhy2658.github.io/default.html)
+- [主页](https://zhy2658.github.io/home.html)
 - [关于我们](https://zhy2658.github.io/about.html)
 
 ### 我是谁？

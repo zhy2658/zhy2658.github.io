@@ -4,7 +4,7 @@
 
 - [主页](https://zhy2658.github.io/home.html)
 - [github仓库](https://github.com/zhy2658/zhy2658.github.io)
-- [我的数学](https://github.com/zhy2658/zhy2658.github.io/mymath1.md)
+- [我的数学](https://zhy2658.github.io/mymath1.md)
 
 ### 我是谁？
 

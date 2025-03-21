@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>w0w0的主页</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,42 +12,48 @@
         }
     </style>
 </head>
+
 <body>
     <div class="zone">
+
         <h4>提示:<span id="tip"></span> </h4>
+        <p style="margin: 20px 0;">
+            用户：<span id="user"></span>
+        </p>
         <ul id="result">
         </ul>
     </div>
 
     <script>
-        // 替换为你的实际 API 端点
-        const apiUrl = 'https://60s-api.viki.moe/v2/60s';
-
-        // 请求参数（根据 API 文档调整）
-        const requestData = {};
-
         $.ajax({
-            url: apiUrl,
+            url: "https://60s-api.viki.moe/v2/60s",
             method: 'GET',
             contentType: 'application/json',
-            data: JSON.stringify(requestData),
-            success: function(res) {
-                // 处理成功响应（根据 API 响应结构调整）
+            data: JSON.stringify({}),
+            success: function (res) {
                 let data = res.data.news;
-                data = data.map((e)=> `<li>${e}</li>`)
-                console.log(data)
-                $('#tip').html(res.message.replace("用户群: 595941841，",''))
+                data = data.map((e) => `<li>${e}</li>`)
+                $('#tip').html(res.message.replace("用户群: 595941841，", ''))
                 $('#result').html(data);
-            },
-            error: function(xhr, status, error) {
-                // 处理错误
-                let errorMessage = `请求失败: ${status}`;
-                if (xhr.responseJSON && xhr.responseJSON.error) {
-                    errorMessage += ` - ${xhr.responseJSON.error.message}`;
-                }
-                $('#result').text(errorMessage);
             }
         });
+        $.post("http://localhost:8787/msg", JSON.stringify({ "token": "12312" }), function (data) {
+            $("#user").html(data);
+        });
+        // $.ajax({
+        //     url: "http://localhost:8787",
+        //     method: 'POST',
+        //     contentType: 'application/json',
+        //     success: function (res) {
+        //         console.log(res)
+        //         // let data = res.data.news;
+        //         // data = data.map((e) => `<li>${e}</li>`)
+        //         // console.log(data)
+        //         // $('#tip').html(res.message.replace("用户群: 595941841，", ''))
+        //         // $('#result').html(data);
+        //     }
+        // });
     </script>
 </body>
+
 </html>

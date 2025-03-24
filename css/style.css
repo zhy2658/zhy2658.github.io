@@ -1,0 +1,8 @@
+.cell {
+  border: 1px solid #c21b52;
+  border-radius: 3px;
+}
+
+.cell-cus-1 {
+  height: 300px;
+}
